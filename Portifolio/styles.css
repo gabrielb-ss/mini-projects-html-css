@@ -1,0 +1,57 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans serif;
+  padding: 40px;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  display: flex;
+  gap: 60px;
+}
+
+div {
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+div + div {
+    margin-top: 30px;
+}
+
+aside {
+  flex: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 70%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#repos{
+  background-color: transparent;
+  display: flex;
+  gap: 30px;
+}
+
+#repos div {
+  height: 100%;
+  margin: auto;
+}
