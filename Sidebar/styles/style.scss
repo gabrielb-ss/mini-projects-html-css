@@ -1,0 +1,70 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+	--light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  display: flex;
+
+  main {
+    padding: 1.8rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+ 
+  nav {
+    height: 100vh;
+    width: 25rem;
+    padding-top: 2.4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    gap: 2.6rem;
+
+    background-color: var(--green);
+
+    display: flex;
+    flex-direction: column;
+
+    #logo-menu {
+      width: auto;
+      margin-left: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .selected {
+      background-color: var(--light-green);
+    }
+
+    ul {
+      gap: 0.7rem;
+    }    
+
+    li {
+      height: 5rem;
+      width: auto;
+      padding: 1.3rem;
+      border-radius: 1.2rem;
+      display: flex;
+      gap: 1.3rem;
+    }
+  }
+}
