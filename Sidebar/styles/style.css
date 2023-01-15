@@ -30,10 +30,8 @@ body main {
 }
 body nav {
   height: 100vh;
-  width: 25rem;
-  padding-top: 2.4rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
+  width: 7.8rem;
+  padding: 2.4rem 1.4rem 1.4rem;
   gap: 2.6rem;
   transition-property: width;
   transition-duration: 0.5s;
@@ -41,22 +39,23 @@ body nav {
   display: flex;
   flex-direction: column;
 }
-body nav #menu-toggle {
-  cursor: pointer;
-}
 body nav #logo-menu {
   height: 5rem;
   width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 body nav #logo-menu #logo {
+  display: none;
   margin-left: 1.5rem;
+}
+body nav #logo-menu #toggle {
+  cursor: pointer;
 }
 body nav .selected {
   background-color: var(--light-green);
 }
-body nav ul {
+body nav menu {
   gap: 0.7rem;
 }
 body nav li {
@@ -67,22 +66,24 @@ body nav li {
   display: flex;
   gap: 1.3rem;
 }
-body .hide-logo #logo {
-  transition: opacity 0.25s, width 0.25s;
+body nav li p {
   opacity: 0;
   width: 0;
-}
-body .hide {
   transition: opacity 0.25s, width 0.25s;
-  opacity: 0;
 }
-body .show {
-  transition-property: opacity, width;
-  transition-duration: 0.9s;
+
+.expand {
+  width: 25rem;
+  transition: width 0.5s;
+}
+.expand #logo-menu {
+  justify-content: space-between;
+}
+.expand #logo-menu #logo {
+  display: inline;
+}
+.expand p {
   opacity: 1;
-}
-body .shrink {
-  transition-property: width;
-  transition-duration: 0.5s;
-  width: 7.8rem;
+  width: 1;
+  transition: opacity 0.25s, width 0.25s;
 }/*# sourceMappingURL=style.css.map */
