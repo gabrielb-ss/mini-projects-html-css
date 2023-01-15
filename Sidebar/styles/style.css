@@ -35,15 +35,23 @@ body nav {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
   gap: 2.6rem;
+  transition-property: width;
+  transition-duration: 0.5s;
   background-color: var(--green);
   display: flex;
   flex-direction: column;
 }
+body nav #menu-toggle {
+  cursor: pointer;
+}
 body nav #logo-menu {
+  height: 5rem;
   width: auto;
-  margin-left: 1.5rem;
   display: flex;
   justify-content: space-between;
+}
+body nav #logo-menu #logo {
+  margin-left: 1.5rem;
 }
 body nav .selected {
   background-color: var(--light-green);
@@ -58,4 +66,23 @@ body nav li {
   border-radius: 1.2rem;
   display: flex;
   gap: 1.3rem;
+}
+body .hide-logo #logo {
+  transition: opacity 0.25s, width 0.25s;
+  opacity: 0;
+  width: 0;
+}
+body .hide {
+  transition: opacity 0.25s, width 0.25s;
+  opacity: 0;
+}
+body .show {
+  transition-property: opacity, width;
+  transition-duration: 0.9s;
+  opacity: 1;
+}
+body .shrink {
+  transition-property: width;
+  transition-duration: 0.5s;
+  width: 7.8rem;
 }/*# sourceMappingURL=style.css.map */
