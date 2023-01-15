@@ -33,7 +33,7 @@ body {
   p {
     opacity: 0;
     width: 0;
-    transition: opacity 0.25s, width 0.25s;
+    transition: opacity 0.2s, width 0.2s;
   }
 
   nav {
@@ -86,17 +86,18 @@ body {
     
     .footer {
       background-color: var(--light-green);
+      height: 6rem;
       margin: auto -1.4rem 0;
       padding: 0 1.4rem;
-      height: 6rem;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       #pfp {
-        width: 4.5rem;
-        height: 4.5rem;
         margin-right: .9rem;
-
+        width: 0;
+        height: 0;
+        transition: width .5s, height .5s;
         object-fit: cover;
         border-radius: 1.2rem;
       }
@@ -106,7 +107,7 @@ body {
       }
 
       #log-out {
-        margin-left: auto;
+        margin-right: 1rem;
       }
     }
   }
@@ -126,6 +127,19 @@ body {
   p {
     opacity: 1;
     width: auto;
-    transition: opacity 0.25s, width 0.25s;
+    transition: opacity 0.4s, width 0.4s;
+    transition-delay: .2s;
+  }
+
+  .footer {
+    #pfp {
+      width: 4.5rem;
+      height: 4.5rem;
+      transition: width .25s, height .25s;
+    } 
+
+    #log-out {
+      margin-left: auto;
+    }
   }
 }
